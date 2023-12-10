@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaz Remodeling LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 0.5rem;
+            margin: 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px; /* Adjust the maximum width as needed */
+        }
+
+        .top-bar {
+            background-color: #eeeeee;
+            color: #555;
+            text-align: center;
+            display: flex;
+            /* justify-content: space-between; */
+            justify-content: center;
+  flex-direction: column;
+        }
+
+        .top-bar span {
+            padding: 4px 10px;
+            margin: 0px 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: 300;
+        }
+
+        .hero {
+            background:linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.1)
+        ), url('construction.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 150px 0;
+            font-size: .85rem;
+        }
+
+        @media screen and (min-width: 760px) {
+            .hero {
+                font-size: 1.65rem;
+                text-align: left;
+            }
+
+            .top-bar {
+                justify-content: space-between;
+                flex-direction: row;
+            }
+
+            .top-bar span {
+                padding: 10px;
+            }
+        }
+
+        .hero h1, h2 {
+            font-weight: 500;
+        }
+
+        .hero .card {
+            margin: 0px 100px;
+        }
+
+        .services {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .services h2 {
+            color: #333;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .services li {
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 200px;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .btn {
+            background-color: #0062cc;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        .btn:hover {
+            background-color: #444;
+        }
+
+        .animate {
+            -o-transition:200ms;
+            -ms-transition:200ms;
+            -moz-transition:200ms;
+            -webkit-transition:200ms;
+            transition:200ms;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f5f5;
+            margin-bottom: 50px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .contact form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>Serving Boston, MA and neighboring regions</span>
+        <span><a href="mailto:contact@dremodelingllc.com">contact@dremodelingllc.com</a></span>
+    </div>
+
+    <header>
+        <img class="logo" src="logo.svg" alt="Diaz Remodeling LLC">
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div class="card">
+            <h1>Diaz Remodeling LLC</h1>
+            <h2>Your Trusted Partner in<br>Residential & Commercial Services</h2>
+            <button class="btn animate">Get Free Quote</button>
+        </div>
+    </div>
+
+    <div id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Siding</li>
+            <li>Flooring</li>
+            <li>Window & Door Installation</li>
+            <li>Roofing</li>
+            <li>Bathroom Remodeling</li>
+            <li>Kitchen Remodeling</li>
+            <li>Interior & Exterior Painting</li>
+            <li>Snow Removal</li>
+            <li>Property Management</li>
+            <li>Gutter Maintenance</li>
+            <li>Professional Cleaning & Demolition</li>
+            <li>Unit Maintenance</li>
+            <li>Four Season Property Maintenance</li>
+            <li>Garbage Management & Removal</li>
+            <li>Drywall</li>
+            <li>All Phases of Construction</li>
+            <!-- Add more services as needed -->
+        </ul>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or need more information? Reach out to us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <footer>
+        &copy; 2023 Diaz Remodeling LLC. All rights reserved.
+    </footer>
+
+</body>
+</html>
