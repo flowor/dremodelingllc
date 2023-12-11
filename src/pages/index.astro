@@ -1,22 +1,85 @@
 ---
 import '../styles/global.css';
-import Logo from '../components/svg/Logo.astro';
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Diaz Remodeling LLC | Residential & Commercial Services</title>
-	</head>
-	<body class="construction-hero h-screen bg-cover bg-no-repeat bg-center">
-		<div class="min-h-screen flex items-center justify-center">
-			<div>
-				<Logo />
-				<h1 class="text-lg md:text-xl text-gray-200">Content will be coming soon!</h1>
-			</div>
-		</div>
-	</body>
+<head>
+    <meta charset="UTF-8">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content={Astro.generator} />
+	<title>Diaz Remodeling LLC | Residential & Commercial Services</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <span>Serving Boston, MA and neighboring regions</span>
+        <span><a href="mailto:contact@dremodelingllc.com">contact@dremodelingllc.com</a></span>
+    </div>
+
+    <header>
+        <a href="/"><img class="logo" src="logo.svg" alt="Diaz Remodeling LLC"></a>
+    </header>
+
+    <nav>
+        <a href="#z">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div class="card">
+            <h1>Diaz Remodeling LLC</h1>
+            <h2>Your Trusted Partner in<br>Residential & Commercial Services</h2>
+            <button class="btn animate">Get Free Quote</button>
+        </div>
+    </div>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Siding</li>
+            <li>Flooring</li>
+            <li>Window & Door Installation</li>
+            <li>Roofing</li>
+            <li>Bathroom Remodeling</li>
+            <li>Kitchen Remodeling</li>
+            <li>Interior & Exterior Painting</li>
+            <li>Snow Removal</li>
+            <li>Property Management</li>
+            <li>Gutter Maintenance</li>
+            <li>Professional Cleaning & Demolition</li>
+            <li>Unit Maintenance</li>
+            <li>Four Season Property Maintenance</li>
+            <li>Garbage Management & Removal</li>
+            <li>Drywall</li>
+            <li>All Phases of Construction</li>
+            <!-- Add more services as needed -->
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or need more information? Reach out to us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Diaz Remodeling LLC. All rights reserved.
+    </footer>
+</body>
 </html>
