@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-    max-width: 150px; /* Adjust the maximum width as needed */
+    max-width: 150px;
 }
 
 .top-bar {
@@ -22,7 +22,6 @@ header {
     color: #555;
     text-align: center;
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     flex-direction: column;
     font-size: .85rem;  
@@ -60,7 +59,7 @@ nav a {
     background:linear-gradient(
   rgba(0, 0, 0, 0.6), 
   rgba(0, 0, 0, 0.1)
-), url('construction.jpg'); /* Replace with your actual image */
+), url('construction.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
