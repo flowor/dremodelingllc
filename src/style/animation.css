@@ -1,0 +1,20 @@
+@keyframes topFadeOut {
+	0% {
+		transform: translate(0rem, -2rem);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0rem, 0rem);
+		opacity: 1;
+	}
+}
+
+.slide-fade-in-animation {
+	animation-name: topFadeOut;
+	animation-duration: 0.5s;
+}
+
+.anim-duration-2 {
+	animation-duration: 2s;
+}

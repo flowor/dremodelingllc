@@ -1,0 +1,1 @@
+<svg class="{$$restProps.class || ''}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cross-class{fill:none;stroke:#CD3700;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style></defs><title/><g id="plus"><line class="cross-class" x1="16" x2="16" y1="7" y2="25"/><line class="cross-class" x1="7" x2="25" y1="16" y2="16"/></g></svg>
